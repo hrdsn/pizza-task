@@ -1,0 +1,91 @@
+@import '~bootstrap/scss/bootstrap';
+
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1200px;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0px 0px 60px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.main {
+  min-height: calc(100vh - 75px - 75px);
+  padding: 50px 0;
+}
+
+.cartСontrol {
+  display: flex;
+  width: 132px;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  height: 100%;
+  align-items: center;
+
+  &_cart {
+    width: 110px;
+    @media only screen and (max-width: 768px) {
+      
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 105, 0);
+    color: rgb(255, 105, 0);
+    border-image: initial;
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: rgb(232, 97, 0);
+      outline: none;
+    }
+  }
+
+  &__count {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    height: 100%;
+    color: black;
+    font-size: 18px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }
+}

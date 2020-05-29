@@ -1,0 +1,42 @@
+.order {
+    &__btnBack {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    font-weight: 500;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(186, 191, 208);
+    border-image: initial;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 32px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    touch-action: manipulation;
+    margin: 0px;
+    text-decoration: none;
+    border-radius: 10px;
+    outline: none;
+    overflow: visible;
+    transition: all 0.15s ease 0s;
+    min-width: 200px;
+    margin-top: 30px;
+    &:hover,
+    &:focus,
+    &:active {
+      color: rgb(232, 97, 0);
+      background-color: transparent;
+      border-color: rgb(255, 105, 0);
+    }
+    @media only screen and (max-width: 768px) {
+      min-width: 0;
+      flex: 1;
+      font-size: 14px;
+      margin: 0 5px;
+      padding: 10px 25px;
+    }
+  }
+}

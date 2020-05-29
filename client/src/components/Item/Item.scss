@@ -1,0 +1,79 @@
+.item {
+  margin-bottom: 60px;
+  @media only screen and (max-width: 576px) {
+    text-align: center;
+  }
+
+  &__title {
+    color: black;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 8px 0px;
+    font-weight: 500;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #73798c;
+  }
+
+  &__top {
+    min-height: 380px;
+    @media only screen and (max-width: 1200px) {
+      min-height: 340px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  &__price {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__priceCurrency {
+    margin-right: 2px;
+  }
+
+  &__action {
+    flex: 1;
+  }
+
+  &__btn {
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition-property: border-color, background, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    color: rgb(255, 105, 0);
+    outline: none;
+    border-radius: 8px;
+    padding: 0px 12px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 105, 0);
+    border-image: initial;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: rgb(217, 99, 52);
+      background: rgb(255, 255, 255);
+      border-color: rgb(217, 99, 52);
+      outline: none;
+    }
+  }
+}
